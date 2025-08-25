@@ -141,7 +141,7 @@
 
 .conteudo-section{
   background-color: transparent;
-  height: 100vh;
+  height: 2000px;
   display: flex;
   justify-content: center;
   
@@ -260,6 +260,7 @@ body {
 /* Telas até 480px (celulares pequenos) */
 @media (max-width: 780px){
   .musica {
+    margin-top: 20px;
     width: 90%;
     height: 200px;
   }
@@ -302,14 +303,15 @@ body {
   }
 
   .conteudo-container{
+    margin-top: 60px;
     max-width: 300px;
     padding: 20px;
     height: 2100px;
+    margin-bottom: 30px;
   }
 
   .conteudo-container:hover{
     transform: scale(1.01);
-    margin-top: 40px;
   }
 
   .conteudo-content p{
@@ -318,6 +320,14 @@ body {
 
   .love-text{
     font-size: 35px;
+  }
+
+  .btn:hover{
+    transform: scale(1.02);
+  }
+
+  .conteudo-section{
+    height: 2300px;
   }
 }
 
