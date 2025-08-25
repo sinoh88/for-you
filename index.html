@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For you</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+     <link rel="icon" type="image/png" href="/static/img/heart.png">
+  </head>
+  <body>
+    <div class="musica-container">
+      <img class="hello" src="/img/hello.gif" alt>
+      <div class="musica">
+        <img class="imagem-musica" src="/static/img/tv.jpg" alt>
+        <h2 class="nome-musica">Cigarrettes out the Window</h2>
+        <p class="nome-artista">TV Girl</p>
+        <audio id="audio"
+          src="/static/audio/Cigarettes out the Window.mp3"></audio>
+        <img id="playIcon" onclick="togglePlay()"
+          src="/static/img/botao-play-ponta-de-seta.png" alt class="play">
+        <div class="progress-bar">
+          <span class="tempo-passando" id="currentTime">0:00</span>
+          <input type="range" id="progress" value="0" step="1">
+          <span class="duracao" id="duration">0:00</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="conteudo-section">
+      <div class="conteudo-container">
+        <div class="conteudo-content">
+          <p>Oi, <span>meu amor,</span></p>
+          <p>Criei este site especialmente para você. Quero te agradecer
+            imensamente por ter entrado na minha vida e, em tão pouco tempo, ter
+            mudado tanta coisa. Eu queria te dizer que você <span>alegra</span>
+            muito o meu
+            dia até em coisas tão pequenas mas que ja fazem bastante diferença
+            para mim, seja com vídeos, mensagens, músicas, fotos, call, etc. Eu
+            vejo
+            muitos <span>valores</span> em você e te considero uma pessoa de
+            coração puro.
+            <span>Amo </span> tudo em você, seus olhinhos, seus cabelos, seu
+            estilo, sua
+            personalidade, até os menores detalhes. Me <span>apaixono</span> mais a cada
+            dia, e não importa quanto tempo eu tenha que esperar, no fim, só
+            quero construir muitas coisas boas ao seu lado.
+          </p>
+          <p><span>Meu amor, </span> você é o tipo de garota que eu sempre <span>sonhei</span> em ter, e
+            vou sempre dar o meu melhor para que você se sinta bem e cuidada,
+            mesmo nos momentos em que, às vezes, posso estar um pouco distante.
+            Estou escrevendo esta carta enquanto escuto a música
+            <span>"Vem Ser Minha"</span>, que foi você quem me fez conhecer. Em todas as
+            músicas românticas, em todos os vídeos românticos, eu sempre me
+            <span>lembro de você.</span> Em todo momento, <span> eu penso em você.</span></p>
+          <p>Enfim, estou escrevendo isso no dia 25 de agosto, e este é o
+            primeiro site que dedico a alguém. Provavelmente, ainda esta semana,
+            te pedirei em <span>namoro,</span> porque eu realmente te <span>amo</span> do fundo do meu
+            coração e quero estar ao seu lado <span>para sempre</span> , conquistando muitas
+            coisas juntos e evoluindo juntos cada vez mais. A gente tem tudo
+            para dar certo, basta manter o <span>esforço</span> de ambos os lados, assim como
+            temos feito desde o começo.</p>
+          <p>Ainda tenho muitas coisas para te dizer, mas deixarei para as
+            futuras cartas. <span>Eu te amo muito.</span></p>
+          <p>Assinado: <span style="color: rgb(2, 179, 255);"> seu futuro
+              namorado</span></p>
+          <a class="btn" onclick="showLove()">Clique aqui!</a>
+          <div class="love-text" id="loveText">EU TE AMO ❤️</div>
+        </div>
+      </div>
+    </section>
+
+    <script src="static/js/script.js"></script>
+
+  </body>
+</html>
