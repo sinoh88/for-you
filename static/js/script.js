@@ -28,10 +28,10 @@ const audio = document.getElementById("audio");
     function togglePlay() {
     if (audio.paused) {
         audio.play();
-        playIcon.src = "/static/img/pausa.png";
+        playIcon.src = "static/img/pausa.png";
     } else {
         audio.pause();
-        playIcon.src = "/static/img/botao-play-ponta-de-seta.png";
+        playIcon.src = "static/img/botao-play-ponta-de-seta.png";
     }
     }
 
@@ -40,7 +40,7 @@ const audio = document.getElementById("audio");
     audio.addEventListener("ended", () => {
     audio.currentTime = 0;
     progress.value = 0;
-    playIcon.src = "/img/botao-play-ponta-de-seta.png"; // Volta o ícone para "play"
+    playIcon.src = "img/botao-play-ponta-de-seta.png"; // Volta o ícone para "play"
     updateProgressBarColor();  // Reseta a barrinha preenchida
     });
 
